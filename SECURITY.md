@@ -10,7 +10,7 @@ I develop this project alone, in my spare time. I try to respond to security iss
 
 If you discover a security vulnerability:
 
-- **Email:** vite-plugin-layout@lionsserver.hu
+- **Email:** `vite-plugin-layout@lionsserver.hu`
 - **Process:**
   1. Send a clear description of the issue and steps to reproduce it.
   2. I will review it as soon as possible and keep you informed if I can.
