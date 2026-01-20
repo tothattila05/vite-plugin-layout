@@ -1,18 +1,27 @@
 {
-  "exclude": ["node_modules", "dist"],
   "compilerOptions": {
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "moduleDetection": "force",
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "isolatedModules": true,
+    "noEmit": true,
 
     "target": "ES2020",
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "bundler",
     "declaration": true,
     "emitDeclarationOnly": false,
     "outDir": "dist",
     "strict": true,
     "skipLibCheck": true,
-    "erasableSyntaxOnly": true
+    "erasableSyntaxOnly": true,
+
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
+    "sourceMap": true,
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
 }

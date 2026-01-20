@@ -1,4 +1,4 @@
-# vite-plugin-layout
+# `vite-plugin-layout`
 
 Dynamic file-based HTML layouts for Vite + React.
 
