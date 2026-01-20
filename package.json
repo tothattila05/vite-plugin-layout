@@ -1,10 +1,14 @@
 {
   "name": "vite-plugin-layout",
+  "private": "false",
   "version": "0.1.0",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "exports": {
     ".": "./dist/index.js"
   },
@@ -12,9 +16,36 @@
     "build": "tsup",
     "dev": "tsup --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "vite-layout",
+    "vite-plugin-layout",
+    "react",
+    "react-layout",
+    "html",
+    "html-layout",
+    "layout",
+    "file-based",
+    "file-based-layout",
+    "file-system",
+    "file-system-routing",
+    "meta",
+    "meta-tags",
+    "seo",
+    "head",
+    "head-manager",
+    "ssr",
+    "ssg",
+    "static-site",
+    "static-site-generator",
+    "frontend",
+    "web",
+    "web-development"
+  ],
+  "description": "File-based HTML layout system for Vite + React. Define global, parent and per-page layouts using simple TypeScript files, and dynamically inject meta tags, scripts and markup into your HTML at build and dev time.",
+  "author": "tothattila05",
+  "license": "MIT",
   "devDependencies": {
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"

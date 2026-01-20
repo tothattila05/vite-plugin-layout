@@ -1,5 +1,9 @@
 {
+  "exclude": ["node_modules", "dist"],
   "compilerOptions": {
+    "lib": ["ESNext"],
+    "moduleDetection": "force",
+
     "target": "ES2020",
     "module": "ESNext",
     "moduleResolution": "Bundler",
