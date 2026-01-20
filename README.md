@@ -1,8 +1,48 @@
 # `vite-plugin-layout`
 
-Dynamic file-based HTML layouts for Vite + React.
+A file-based HTML layout system for Vite + React that lets you define hierarchical layouts and inject dynamic content via simple TypeScript files.
 
 ## Install
 
 ```bash
-npm install vite-plugin-layout
+npm install -D vite-plugin-layout
+```
+
+## Usage
+
+```ts
+import { defineLayout } from "vite-plugin-layout/layout";
+import { RobotsDirective } from "vite-plugin-layout/meta/";
+
+export default defineLayout(({ head, body }) => {
+  head.meta({
+    charset: "UTF-8",
+  });
+  head.meta({
+    "http-equiv": "X-UA-Compatible",
+    content: "IE=edge",
+  });
+  head.meta({
+    name: "viewport",
+    content: "width=device-width, initial-scale=1.0",
+  });
+
+  head.meta({
+    name: "robots",
+    content: "index, follow, max-image-preview:large",
+  });
+  head.meta({
+    name: "google",
+    content: "notranslate",
+  });
+
+  const robotMetas = RobotsDirective(true);
+  robotMetas.forEach((meta) => head.meta(meta));
+
+  head.link({
+    rel: "icon",
+    type: "image/png",
+    href: "/favicon.png",
+  });
+});
+```
