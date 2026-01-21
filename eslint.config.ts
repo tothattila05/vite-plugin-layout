@@ -8,7 +8,7 @@ import { defineConfig, globalIgnores } from "eslint/config";
 export default defineConfig([
   globalIgnores(["dist/**"]),
   {
-    files: ["**/*.{ts}"],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       eslintJs.configs.recommended,
       tseslint.configs.recommended,
@@ -23,7 +23,7 @@ export default defineConfig([
       },
       parser: tseslint.parser,
       parserOptions: {
-        project: ["./tsconfig.json"],
+        project: ["./tsconfig.node.json"],
         tsconfigRootDir: import.meta.dirname,
       },
     },

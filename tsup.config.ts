@@ -2,11 +2,13 @@ import { defineConfig } from "tsup";
 
 export default defineConfig({
   entry: ["src/index.ts"],
-  format: ["esm"],
+  format: ["cjs", "esm"],
   dts: true,
   clean: true,
+  shims: true,
   minify: false,
   treeshake: true,
   sourcemap: true,
-  external: ['vite', 'react', 'react-dom', 'esbuild']
+  skipNodeModulesBundle: true,
+  tsconfig: "./tsconfig.node.json",
 });

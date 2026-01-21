@@ -1,27 +1,4 @@
 {
-  "compilerOptions": {
-    "lib": ["ESNext", "DOM"],
-    "moduleDetection": "force",
-    "noImplicitAny": true,
-    "esModuleInterop": true,
-    "strictNullChecks": true,
-    "isolatedModules": true,
-    "noEmit": true,
-
-    "target": "ES2020",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "declaration": true,
-    "emitDeclarationOnly": false,
-    "outDir": "dist",
-    "strict": true,
-    "skipLibCheck": true,
-    "erasableSyntaxOnly": true,
-
-    "forceConsistentCasingInFileNames": true,
-    "types": ["node"],
-    "sourceMap": true,
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"],
+  "files": [],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

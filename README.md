@@ -5,7 +5,7 @@ A file-based HTML layout system for Vite + React that lets you define hierarchic
 ## Install
 
 ```bash
-npm install -D vite-plugin-layout
+npm install -D @tothattila05/vite-plugin-layout
 ```
 
 ## Usage
@@ -46,3 +46,7 @@ export default defineLayout(({ head, body }) => {
   });
 });
 ```
+
+## Support
+
+Write a mail: `support@vpl.tothattila05.hu`
