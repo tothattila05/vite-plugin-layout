@@ -168,10 +168,10 @@ async function loadAndRunLayout(
 
 function indentRawBlock(block: string, baseIndent: string): string {
   const lines = block.split("\n");
-  while (lines.length && lines[0].trim() === "") {
+  while (lines.length && lines[0]?.trim() === "") {
     lines.shift();
   }
-  while (lines.length && lines[lines.length - 1].trim() === "") {
+  while (lines.length && lines[lines.length - 1]?.trim() === "") {
     lines.pop();
   }
   return lines
