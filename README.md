@@ -11,8 +11,7 @@ npm install -D @tothattila05/vite-plugin-layout
 ## Usage
 
 ```ts
-import { defineLayout } from "vite-plugin-layout/layout";
-import { RobotsDirective } from "vite-plugin-layout/meta/";
+import { defineLayout, RobotsDirective } from "@tothattila05/vite-plugin-layout";
 
 export default defineLayout(({ head, body }) => {
   head.meta({
